@@ -1,3 +1,8 @@
+@font-face{
+  src:url(https://cdn.jsdelivr.net/gh/TusharAMD/Developers-Days@master/Week_1/Task-1/CaptainMarvel%20400.ttf);
+  font-family:"capm";  
+}
+
 body{
     background-color:#34282C;
 }
@@ -13,7 +18,7 @@ body{
     height:100px;
     vertical-align: middle;
     
-    background-image: url("header.jpg");
+    background-image: url("https://raw.githubusercontent.com/TusharAMD/Developers-Days/master/Week_1/Task-1/header.jpg");
     background-size:contain;
     align-items: center;
     justify-content: center;
@@ -22,8 +27,11 @@ body{
 
 .heading div{
     text-align:center;
-    font-family: 'Bangers', cursive;
-    font-size:40px;
+    font-family: "capm";
+    font-size:25px;
+    color:white;
+    text-shadow: 2px 2px #000000;
+    
 }
 
 input{
