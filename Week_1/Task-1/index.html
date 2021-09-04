@@ -3,11 +3,12 @@
 <head>
 
 </head>
-<script type="text/javascript" src= "https://raw.githack.com/TusharAMD/Developers-Days/master/Week_1/Task-1/script.js"> </script>
-
+<script type="text/javascript" src= "./script.js"> </script>
+<meta charset=utf-8 />
 <link rel="stylesheet" href="./styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js" integrity="sha512-XTa+nLKjbTCUazCWzwYpykjsTQDaepuKlg9YToCij7+Bdi9aHQhBQlV0rfnYmactJjHdusRQQV+6qWNNv0BScA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <body>
 
 <div class = "container">
@@ -20,43 +21,45 @@
     
     <div class = "calci">
     
-    <input>
+    <input id="calcidisplay" accept-charset="utf-8">
     
     <div class = "numbers">
     <div><button onclick="calc('x2')">x<sup>2</sup></button></div>
-    <div><button>&#8730 x</button></div>
-    <div><button>log</button></div>
-    <div><button>C</button></div>
+    <div><button onclick="calc('sqrt')">&#8730 x</button></div>
+    <div><button onclick="calc('log')">log</button></div>
+    <div><button onclick="calc('C')">C</button></div>
     
-    <div><button>&#960 </button></div>
-    <div><button>sin </button></div>
-    <div><button>cos </button></div>
-    <div><button>tan </button></div>
+    <div><button onclick="calc('pi')">&#960 </button></div>
+    <div><button onclick="calc('sin')">sin </button></div>
+    <div><button onclick="calc('cos')">cos </button></div>
+    <div><button onclick="calc('tan')">tan </button></div>
     
-    <div><button>e</button></div>
-    <div><button>asin</button></div>
-    <div><button>acos</button></div>
-    <div><button>atan</button></div>
+    <div><button onclick="calc('e')">e</button></div>
+    <div><button onclick="calc('deg')">&#176 </button></div>
+    <div><button onclick="calc('openbracket')">(</button></div>
+    <div><button onclick="calc('closebracket')">)</button></div>
+
     
     <div><button onclick="calc('7')">7</button></div>
-    <div><button>8</button></div>
-    <div><button>9</button></div>
-    <div><button>&#215</button></div>
+    <div><button onclick="calc('8')">8</button></div>
+    <div><button onclick="calc('9')">9</button></div>
+    <div><button onclick="calc('*')">&#215</button></div>
     
-    <div><button>4</button></div>
-    <div><button>5</button></div>
-    <div><button>6</button></div>
-    <div><button>-</button></div>
+    <div><button onclick="calc('4')">4</button></div>
+    <div><button onclick="calc('5')">5</button></div>
+    <div><button onclick="calc('6')">6</button></div>
+    <div><button onclick="calc('-')">-</button></div>
     
-    <div><button>1</button></div>
-    <div><button>2</button></div>
-    <div><button>3</button></div>
-    <div><button>+</button></div>
+    <div><button onclick="calc('1')">1</button></div>
+    <div><button onclick="calc('2')">2</button></div>
+    <div><button onclick="calc('3')">3</button></div>
+    <div><button onclick="calc('+')">+</button></div>
     
-    <div></div>
-    <div><button>0</button></div>
-    <div><button>.</button></div>
-    <div><button onclick="myFunction()">=</button></div>
+    
+    <div><button onclick="calc('0')">0</button></div>
+    <div><button onclick="calc('.')">.</button></div>
+    <div><button onclick="calc('=')">=</button></div>
+    <div><button onclick="calc('/')">÷</button></div>
     
     <div id="result"></div>
     
