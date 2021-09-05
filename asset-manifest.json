@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Developers-Days/Week_1/Task-2/static/css/main.ce363b02.chunk.css",
-    "main.js": "/Developers-Days/Week_1/Task-2/static/js/main.5dd55a3c.chunk.js",
-    "main.js.map": "/Developers-Days/Week_1/Task-2/static/js/main.5dd55a3c.chunk.js.map",
-    "runtime-main.js": "/Developers-Days/Week_1/Task-2/static/js/runtime-main.c8e096e4.js",
-    "runtime-main.js.map": "/Developers-Days/Week_1/Task-2/static/js/runtime-main.c8e096e4.js.map",
-    "static/js/2.590b8c9f.chunk.js": "/Developers-Days/Week_1/Task-2/static/js/2.590b8c9f.chunk.js",
-    "static/js/2.590b8c9f.chunk.js.map": "/Developers-Days/Week_1/Task-2/static/js/2.590b8c9f.chunk.js.map",
-    "static/js/3.246a0331.chunk.js": "/Developers-Days/Week_1/Task-2/static/js/3.246a0331.chunk.js",
-    "static/js/3.246a0331.chunk.js.map": "/Developers-Days/Week_1/Task-2/static/js/3.246a0331.chunk.js.map",
-    "index.html": "/Developers-Days/Week_1/Task-2/index.html",
-    "static/css/main.ce363b02.chunk.css.map": "/Developers-Days/Week_1/Task-2/static/css/main.ce363b02.chunk.css.map",
-    "static/js/2.590b8c9f.chunk.js.LICENSE.txt": "/Developers-Days/Week_1/Task-2/static/js/2.590b8c9f.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/Developers-Days/Week_1/Task-2/static/media/logo.6ce24c58.svg"
+    "main.css": "/Developers-Days/static/css/main.ce363b02.chunk.css",
+    "main.js": "/Developers-Days/static/js/main.5dd55a3c.chunk.js",
+    "main.js.map": "/Developers-Days/static/js/main.5dd55a3c.chunk.js.map",
+    "runtime-main.js": "/Developers-Days/static/js/runtime-main.c339b09f.js",
+    "runtime-main.js.map": "/Developers-Days/static/js/runtime-main.c339b09f.js.map",
+    "static/js/2.590b8c9f.chunk.js": "/Developers-Days/static/js/2.590b8c9f.chunk.js",
+    "static/js/2.590b8c9f.chunk.js.map": "/Developers-Days/static/js/2.590b8c9f.chunk.js.map",
+    "static/js/3.246a0331.chunk.js": "/Developers-Days/static/js/3.246a0331.chunk.js",
+    "static/js/3.246a0331.chunk.js.map": "/Developers-Days/static/js/3.246a0331.chunk.js.map",
+    "index.html": "/Developers-Days/index.html",
+    "static/css/main.ce363b02.chunk.css.map": "/Developers-Days/static/css/main.ce363b02.chunk.css.map",
+    "static/js/2.590b8c9f.chunk.js.LICENSE.txt": "/Developers-Days/static/js/2.590b8c9f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Developers-Days/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c8e096e4.js",
+    "static/js/runtime-main.c339b09f.js",
     "static/js/2.590b8c9f.chunk.js",
     "static/css/main.ce363b02.chunk.css",
     "static/js/main.5dd55a3c.chunk.js"
