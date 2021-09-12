@@ -4,7 +4,8 @@ var app=express()
 app.set('view engine','ejs');
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
-
+const ObjectID = require('mongodb').ObjectID;
+var mongodb = require("mongodb");
 const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://admin:admin@cluster0.wonbr.mongodb.net/todo?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -43,6 +44,21 @@ app.get('/all',(req, res) => {
     });
 
 
+});
+
+
+
+app.post('/delete',(req, res) => {
+    
+    
+    client.connect(err => {
+    const collection = client.db("todo").collection("todos");
+    collection.deleteOne({todo: req.body.checkbox.toString()});
+    console.log(req.body.checkbox)
+    res.redirect("/all");
+});
+    
+    
 });
 
 

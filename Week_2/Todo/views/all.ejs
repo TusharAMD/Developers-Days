@@ -5,7 +5,15 @@
 <h3>All</h3>
 
 <% for(var i=0; i<allitems.length; i++) {%>
-<%- allitems[i].todo -%><br>
+<form action="/delete"  method="post">
+
+
+<input type="checkbox" name="checkbox" value="<%=allitems[i].todo %>"onChange="this.form.submit()"id="checkbox">
+<label for="checkbox"></label>
+
+<%- allitems[i].todo -%>
+</form>
+
 <% } %>
 
 
