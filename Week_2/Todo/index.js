@@ -10,20 +10,41 @@ const uri = "mongodb+srv://admin:admin@cluster0.wonbr.mongodb.net/todo?retryWrit
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
-app.get('/all',(req, res) => {
-res.render('all',{"todolist":"1"});
-client.connect(err => {
-  const collection = client.db("todo").collection("todos");
-  var myobj = { todo: "Sample"};
-  collection.insertOne(myobj);
-}); 
+app.get('/add',(req, res) => {
+res.render('add');
+
 });
 
 
 
 app.post('/add',(req, res) => {
-
-res.render('add',{"todolist":"1"});
+    
+    var item=req.body.n;
+    console.log(item)
+    
+client.connect(err => {
+  const collection = client.db("todo").collection("todos");
+  var myobj = { todo: item};
+  collection.insertOne(myobj);
 });
+});
+
+app.get('/all',(req, res) => {
+    allitems=""
+    client.connect(err => {
+      const collection = client.db("todo").collection("todos");
+      allitems=collection.find({}).toArray(function(err, result) {
+    if (err) throw err;
+      //console.log(result[0].todo)
+      res.render('all', {allitems:result});
+      
+      });
+
+    });
+
+
+});
+
+
 
 app.listen(3000, () => console.log("Server Up and running"));
